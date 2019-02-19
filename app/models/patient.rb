@@ -3,6 +3,6 @@ has_many :doctors, through: :appointments
 has_many :appointments
 
 def appointment
-  
+
 end
 end
