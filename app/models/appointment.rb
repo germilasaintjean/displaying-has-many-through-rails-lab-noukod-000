@@ -3,7 +3,7 @@ belongs_to :doctor
 belongs_to :patient
 
 def appointment
-  @appointment.doctor
-  @appointment.patient
+  @appointment = Appointment.find params[:doctor]
+  @appointment = Appointment.find params[:patient]
 end
 end
