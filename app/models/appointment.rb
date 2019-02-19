@@ -7,6 +7,5 @@ def set_doctor
 end
 def set_patient
   @appointment = Appointment.find params[:patient]
-
 end
 end
