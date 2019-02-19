@@ -2,7 +2,7 @@ class Appointment < ActiveRecord::Base
 belongs_to :doctor
 belongs_to :patient
 
-def appointment(appointment_datetime, doctor, patient)
+def appointment
   self.appointment_datetime.strftime("%B %d, %Y at %H:%M")
   self.doctor.name
   self.patient.name
