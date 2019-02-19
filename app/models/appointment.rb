@@ -2,8 +2,10 @@ class Appointment < ActiveRecord::Base
 belongs_to :doctor
 belongs_to :patient
 
-def appointment
+def set_doctor
   @appointment = Appointment.find params[:doctor]
-  @appointment = Appointment.find params[:patient]
+end
+def set_patient
+
 end
 end
